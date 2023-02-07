@@ -1,0 +1,27 @@
+#carrusel-1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+}
+.carousel-item{
+    text-align: center !important;
+}
+.img-home{
+    width: 50%;
+    height: 20vh;
+    position: relative;
+}
+
+.img-home img{
+    position: absolute;
+    right: 50%;
+    bottom: -5vh;
+}
+.marco1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+}
