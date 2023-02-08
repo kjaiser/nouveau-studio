@@ -23,84 +23,97 @@
 
 </head>
 <body>
-    
+  <div style="height: 100vh;">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="../img/logo_2.png" alt="logo" width="150px">
             </a>
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist" style="justify-content: space-evenly">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="calculadora-tab" data-bs-toggle="tab" data-bs-target="#calculadora-tab-pane" type="button" role="tab" aria-controls="calculadora-tab-pane" aria-selected="false">Caluladora</button>
+              </li>
+            </ul>
         </div>
     </nav>
+    <section class="row sin-pading" style="justify-content: center; margin-bottom: 5vh;">
+      <div class="col-8 sin-pading">
+        <div class="tab-content" id="myTabContent">
+          
 
-    <main>
-    <section id="carrusel-1">
-        <div id="carrusel-principal" class="carousel slide carousel-fade">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../img/1.png" alt="..." style="width: 80%;">
-              </div>
-              <div class="carousel-item">
-                <img src="../img/2.png" alt="..." style="width: 80%;">
-              </div>
-              <div class="carousel-item">
-                <img src="../img/3.png" alt="..." style="width: 80%;">
-              </div>
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div id="fondo" class="fondo">
+
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-principal" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #B99B6B;"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carrusel-principal" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #B99B6B;"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="row sin-pading" style="height: 35vh;align-items: center">
+                <div class="col-4 sin-pading">
+                  <div class="img-home">
+                    <img src="../img/estampa.jpg" alt="" width="200vw">
+                  </div>
+                </div>
+                <div class="col-8 sin-pading justify-content-center">
+                  <div style="width: 80%; text-align: center;">
+                    <h3>Somos un estudio de Diseño de Interiores que busca romper con las tendencias dominantes del momento</h3>
+                  </div>
+                </div>
+            </div>  
           </div>
-    </section>
-    <section class="row" style="justify-content: center; margin-bottom: 5vh;">
-        <div class="col-8">
-            <ul class="nav nav-tabs" id="myTab" role="tablist" style="justify-content: space-evenly">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="calculadora-tab" data-bs-toggle="tab" data-bs-target="#calculadora-tab-pane" type="button" role="tab" aria-controls="calculadora-tab-pane" aria-selected="false">Caluladora</button>
-                </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                    <div class="col-4 img-home">
-                        <img src="../img/estampa.jpg" alt="" width="200vw">
-                    </div>
-                    <div class="col-6">
 
+
+          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            
+            <section id="carrusel-1">
+              <div id="carrusel-principal" class="carousel slide carousel-fade">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../img/1.png" alt="..." style="width: 80%;">
                     </div>
+                    <div class="carousel-item">
+                      <img src="../img/2.png" alt="..." style="width: 80%;">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../img/3.png" alt="..." style="width: 80%;">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-principal" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #B99B6B;"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carrusel-principal" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #B99B6B;"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                  <h3>Perfil</h3>
-                </div>
-                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                  <h3>Contactos</h3>
-                </div>
-                <div class="tab-pane fade" id="calculadora-tab-pane" role="tabpanel" aria-labelledby="calculadora-tab" tabindex="0">
-                  <h3>Calculadora</h3>
-                  <label for="tLed">Elige tipo de led</label>
-                  <select name="led" id="tLed">
-                    <option value="1">60 led/m</option>
-                    <option value="2">120 led/m</option>
-                    <option value="3">240 led/m</option>
-                  </select>
-                  
-                </div>
-              </div>
+          </section>
+
+          </div>
+          <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            <h3>Contactos</h3>
+          </div>
+          <div class="tab-pane fade" id="calculadora-tab-pane" role="tabpanel" aria-labelledby="calculadora-tab" tabindex="0">
+            <h3>Calculadora</h3>
+            <label for="tLed">Elige tipo de led</label>
+            <select name="led" id="tLed">
+              <option value="1">60 led/m</option>
+              <option value="2">120 led/m</option>
+              <option value="3">240 led/m</option>
+            </select>
+            
+          </div>
         </div>
+      </div>
     </section>
-    </main>
+  </div>
 
 
 <!-- Footer -->
